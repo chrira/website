@@ -681,11 +681,11 @@
 
 // Beer Button
 
+    $('div#beer-dialog').dialog({autoOpen: false})
     $('#beer-button').click((function () {
-        $('div#thedialog').dialog('open');
-    })
-
-    $('div.thedialog').dialog({autoOpen: false})
+        $('#beer-dialog').dialog('open');
+        return false;
+    }))
 
 })
 (window);
